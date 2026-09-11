@@ -3,6 +3,25 @@ import { ExternalLink, Handshake } from 'lucide-react'
 export default function SponsorsSection() {
   const sponsors = [
     {
+      name: 'SCOPE',
+      logo: '/scope_logo.png',
+      url: 'https://sumagoinfotech.com/',
+      tier: 'TITLE SPONSOR',
+      desc: 'Sumago Center Of Practical Excellence',
+      isActive: true,
+      isLargeLogo: true
+    },
+    {
+      name: 'Sumago Infotech Pvt. Ltd.',
+      logo: '/sumago_logo.png',
+      url: 'https://sumagoinfotech.com/',
+      tier: 'POWERED BY',
+      desc: 'Official Technology Partner',
+      isActive: true,
+      isLargeLogo: true,
+      isWideLogo: true
+    },
+    {
       name: '.XYZ Domains',
       logo: '/xyz_logo.png',
       url: 'https://gen.xyz',
@@ -46,22 +65,6 @@ export default function SponsorsSection() {
       isLargeLogo: true
     },
     {
-      name: 'Title Sponsor',
-      logo: null,
-      url: '#',
-      tier: 'TITLE SPONSOR',
-      desc: 'Announcing Soon',
-      isActive: false
-    },
-    {
-      name: 'Powered By Partner',
-      logo: null,
-      url: '#',
-      tier: 'POWERED BY',
-      desc: 'Announcing Soon',
-      isActive: false
-    },
-    {
       name: 'Community Partner',
       logo: null,
       url: '#',
@@ -87,7 +90,11 @@ export default function SponsorsSection() {
             >
               {/* Logo Box */}
               <div
-                className={`w-20 h-16 sm:w-24 sm:h-16 rounded-xl ${
+                className={`${
+                  item.isWideLogo
+                    ? 'w-28 h-16 sm:w-36 sm:h-16'
+                    : 'w-20 h-16 sm:w-24 sm:h-16'
+                } rounded-xl ${
                   item.isFullBox
                     ? 'bg-black border border-slate-900'
                     : 'bg-slate-50 border border-slate-100 p-2 group-hover:bg-slate-100/80'
@@ -108,7 +115,15 @@ export default function SponsorsSection() {
 
               {/* Details */}
               <div className="min-w-max pr-1">
-                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider text-[#062b59] bg-[#f5ede4] border border-[#e2d5c5] leading-none whitespace-nowrap">
+                <span
+                  className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider leading-none whitespace-nowrap ${
+                    item.tier === 'TITLE SPONSOR'
+                      ? 'text-amber-900 bg-amber-100 border border-amber-300'
+                      : item.tier === 'POWERED BY'
+                      ? 'text-[#062b59] bg-blue-100 border border-blue-300'
+                      : 'text-[#062b59] bg-[#f5ede4] border border-[#e2d5c5]'
+                  }`}
+                >
                   {item.tier}
                 </span>
                 <h3 className="text-xs sm:text-sm font-bold text-[#062b59] group-hover:text-blue-600 transition-colors leading-snug mt-1 whitespace-nowrap">
@@ -132,7 +147,11 @@ export default function SponsorsSection() {
             >
               {/* Logo Box */}
               <div
-                className={`w-20 h-16 sm:w-24 sm:h-16 rounded-xl ${
+                className={`${
+                  item.isWideLogo
+                    ? 'w-28 h-16 sm:w-36 sm:h-16'
+                    : 'w-20 h-16 sm:w-24 sm:h-16'
+                } rounded-xl ${
                   item.isFullBox
                     ? 'bg-black border border-slate-900'
                     : 'bg-slate-50 border border-slate-100 p-2'
@@ -153,7 +172,15 @@ export default function SponsorsSection() {
 
               {/* Details */}
               <div className="min-w-max pr-1">
-                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider text-[#062b59] bg-[#f5ede4] border border-[#e2d5c5] leading-none whitespace-nowrap">
+                <span
+                  className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider leading-none whitespace-nowrap ${
+                    item.tier === 'TITLE SPONSOR'
+                      ? 'text-amber-900 bg-amber-100 border border-amber-300'
+                      : item.tier === 'POWERED BY'
+                      ? 'text-[#062b59] bg-blue-100 border border-blue-300'
+                      : 'text-[#062b59] bg-[#f5ede4] border border-[#e2d5c5]'
+                  }`}
+                >
                   {item.tier}
                 </span>
                 <h3 className="text-xs sm:text-sm font-bold text-[#062b59] leading-snug mt-1 whitespace-nowrap">

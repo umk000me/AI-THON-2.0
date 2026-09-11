@@ -42,6 +42,23 @@ export default function HeroSection() {
               fetchPriority="high"
             />
           </div>
+
+          {/* Powered by Sumago Infotech Pvt. Ltd. */}
+          <a
+            href="https://sumagoinfotech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/powered inline-flex items-center gap-2.5 mt-2 sm:mt-2.5 px-4 py-1.5 rounded-full bg-white/95 hover:bg-white border border-[#edebe6] hover:border-blue-400 shadow-2xs hover:shadow-xs transition-all duration-200"
+          >
+            <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 group-hover/powered:text-blue-600 transition-colors">
+              Powered by
+            </span>
+            <img
+              src="/sumago_logo.png"
+              alt="Sumago Infotech Pvt. Ltd."
+              className="h-5 sm:h-6 w-auto object-contain group-hover/powered:scale-[1.02] transition-transform duration-200"
+            />
+          </a>
           
           <p className="mt-2 sm:mt-2.5 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-black text-[#ea580c] tracking-tight uppercase leading-tight break-words">
             BUILD. INNOVATE. TRANSFORM.

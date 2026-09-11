@@ -2,6 +2,20 @@ import { ExternalLink } from 'lucide-react'
 
 const sponsorsList = [
   {
+    name: 'SCOPE',
+    logo: '/scope_logo.png',
+    url: 'https://sumagoinfotech.com/',
+    role: 'TITLE SPONSOR',
+    desc: 'Sumago Center Of Practical Excellence — Igniting Minds, Enhancing Skills through practical technical training.',
+  },
+  {
+    name: 'Sumago Infotech Pvt. Ltd.',
+    logo: '/sumago_logo.png',
+    url: 'https://sumagoinfotech.com/',
+    role: 'POWERED BY',
+    desc: 'Premier software development and IT consulting company driving technological innovation for AITHON 2.0.',
+  },
+  {
     name: '.XYZ Domains',
     logo: '/xyz_logo.png',
     url: 'https://gen.xyz',
@@ -63,7 +77,7 @@ export default function OurSponsors() {
         </div>
 
         {/* Proper Static Sponsor Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
           {sponsorsList.map((sponsor) => {
             const hasLink = Boolean(sponsor.url)
 
@@ -106,7 +120,15 @@ export default function OurSponsors() {
                   </div>
 
                   {/* Role Badge */}
-                  <div className="inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-blue-50/90 text-[#062b59] border border-blue-100 mb-2">
+                  <div
+                    className={`inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider mb-2 ${
+                      sponsor.role === 'TITLE SPONSOR'
+                        ? 'bg-amber-100/90 text-amber-900 border border-amber-300'
+                        : sponsor.role === 'POWERED BY'
+                        ? 'bg-blue-100/90 text-[#062b59] border border-blue-300'
+                        : 'bg-blue-50/90 text-[#062b59] border border-blue-100'
+                    }`}
+                  >
                     {sponsor.role}
                   </div>
 
