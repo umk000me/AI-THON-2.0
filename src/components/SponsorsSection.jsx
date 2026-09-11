@@ -56,6 +56,24 @@ export default function SponsorsSection() {
       isFullBox: true
     },
     {
+      name: 'Qwicit',
+      logo: '/qwicit_logo.png',
+      url: 'https://qwicit.com/',
+      tier: 'ASSOCIATE PARTNER',
+      desc: 'Digital & IT Solutions',
+      isActive: true,
+      isLargeLogo: true
+    },
+    {
+      name: 'Shravya Studios',
+      logo: '/shravya_logo.png',
+      url: 'https://shravyastudios.com/',
+      tier: 'ASSOCIATE PARTNER',
+      desc: 'Media & Creative Studios',
+      isActive: true,
+      isFullBox: true
+    },
+    {
       name: 'Dainik Yuvavarta',
       logo: '/yuvavarta_logo.png',
       url: '#',

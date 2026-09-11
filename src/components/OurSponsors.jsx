@@ -45,6 +45,21 @@ const sponsorsList = [
     isDarkBg: true,
   },
   {
+    name: 'Qwicit',
+    logo: '/qwicit_logo.png',
+    url: 'https://qwicit.com/',
+    role: 'ASSOCIATE PARTNER',
+    desc: "There's no limit to ideas.! — Innovative digital solutions and modern technology consultancy.",
+  },
+  {
+    name: 'Shravya Studios',
+    logo: '/shravya_logo.png',
+    url: 'https://shravyastudios.com/',
+    role: 'ASSOCIATE PARTNER',
+    desc: 'Creative media production, premium visual storytelling, and digital studio solutions.',
+    isDarkBg: true,
+  },
+  {
     name: 'Dainik Yuvavarta',
     logo: '/yuvavarta_logo.png',
     url: '',
