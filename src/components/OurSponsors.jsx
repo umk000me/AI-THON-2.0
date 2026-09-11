@@ -120,15 +120,7 @@ export default function OurSponsors() {
                   </div>
 
                   {/* Role Badge */}
-                  <div
-                    className={`inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider mb-2 ${
-                      sponsor.role === 'TITLE SPONSOR'
-                        ? 'bg-amber-100/90 text-amber-900 border border-amber-300'
-                        : sponsor.role === 'POWERED BY'
-                        ? 'bg-blue-100/90 text-[#062b59] border border-blue-300'
-                        : 'bg-blue-50/90 text-[#062b59] border border-blue-100'
-                    }`}
-                  >
+                  <div className="inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider mb-2 text-[#062b59] bg-[#f5ede4] border border-[#e2d5c5]">
                     {sponsor.role}
                   </div>
 
