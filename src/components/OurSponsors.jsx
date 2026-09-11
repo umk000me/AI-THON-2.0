@@ -16,6 +16,21 @@ const sponsorsList = [
     desc: 'Premier software development and IT consulting company driving technological innovation for AITHON 2.0.',
   },
   {
+    name: 'NEXA (Mahalaxmi Automotives)',
+    logo: '/nexa_logo.png',
+    url: 'https://www.nexaexperience.com/',
+    role: 'Official Automotive Partner',
+    desc: 'Mahalaxmi Automotives, Sangamner — delivering premium luxury automotive experiences.',
+    isDarkBg: true,
+  },
+  {
+    name: 'Dainik Yuvavarta',
+    logo: '/yuvavarta_logo.png',
+    url: '',
+    role: 'Official Media Partner',
+    desc: 'Leading regional daily newspaper delivering trusted journalism and extensive media coverage.',
+  },
+  {
     name: '.XYZ Domains',
     logo: '/xyz_logo.png',
     url: 'https://gen.xyz',
@@ -37,14 +52,6 @@ const sponsorsList = [
     desc: 'End-to-end enterprise software engineering, scalable cloud solutions, and IT consulting.',
   },
   {
-    name: 'NEXA (Mahalaxmi Automotives)',
-    logo: '/nexa_logo.png',
-    url: 'https://www.nexaexperience.com/',
-    role: 'Official Automotive Partner',
-    desc: 'Mahalaxmi Automotives, Sangamner — delivering premium luxury automotive experiences.',
-    isDarkBg: true,
-  },
-  {
     name: 'Qwicit',
     logo: '/qwicit_logo.png',
     url: 'https://qwicit.com/',
@@ -58,13 +65,6 @@ const sponsorsList = [
     role: 'ASSOCIATE PARTNER',
     desc: 'Creative media production, premium visual storytelling, and digital studio solutions.',
     isDarkBg: true,
-  },
-  {
-    name: 'Dainik Yuvavarta',
-    logo: '/yuvavarta_logo.png',
-    url: '',
-    role: 'Official Media Partner',
-    desc: 'Leading regional daily newspaper delivering trusted journalism and extensive media coverage.',
   },
 ]
 

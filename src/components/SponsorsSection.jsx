@@ -22,6 +22,24 @@ export default function SponsorsSection() {
       isWideLogo: true
     },
     {
+      name: 'NEXA (Mahalaxmi Automotives, Sangamner)',
+      logo: '/nexa_logo.png',
+      url: 'https://www.nexaexperience.com/',
+      tier: 'ASSOCIATE PARTNER',
+      desc: 'Official Automotive Partner',
+      isActive: true,
+      isFullBox: true
+    },
+    {
+      name: 'Dainik Yuvavarta',
+      logo: '/yuvavarta_logo.png',
+      url: '#',
+      tier: 'MEDIA PARTNER',
+      desc: 'Official Media Partner',
+      isActive: true,
+      isLargeLogo: true
+    },
+    {
       name: '.XYZ Domains',
       logo: '/xyz_logo.png',
       url: 'https://gen.xyz',
@@ -47,15 +65,6 @@ export default function SponsorsSection() {
       isActive: true
     },
     {
-      name: 'NEXA (Mahalaxmi Automotives, Sangamner)',
-      logo: '/nexa_logo.png',
-      url: 'https://www.nexaexperience.com/',
-      tier: 'ASSOCIATE PARTNER',
-      desc: 'Official Automotive Partner',
-      isActive: true,
-      isFullBox: true
-    },
-    {
       name: 'Qwicit',
       logo: '/qwicit_logo.png',
       url: 'https://qwicit.com/',
@@ -72,15 +81,6 @@ export default function SponsorsSection() {
       desc: 'Media & Creative Studios',
       isActive: true,
       isFullBox: true
-    },
-    {
-      name: 'Dainik Yuvavarta',
-      logo: '/yuvavarta_logo.png',
-      url: '#',
-      tier: 'MEDIA PARTNER',
-      desc: 'Official Media Partner',
-      isActive: true,
-      isLargeLogo: true
     },
     {
       name: 'Community Partner',
