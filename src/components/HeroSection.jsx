@@ -6,7 +6,7 @@ import { CalendarIcon, ClockIcon, UsersIcon, MapPinIcon } from './Icons'
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full bg-[#fef6eb] overflow-x-hidden min-h-[calc(100vh-112px)] flex flex-col items-center justify-center pt-3 sm:pt-4 md:pt-5 lg:pt-6 pb-4 sm:pb-6 lg:pb-8 px-3 sm:px-6 lg:px-8">
+    <section className="relative w-full bg-[#fef6eb] overflow-x-hidden min-h-[calc(100dvh-100px)] sm:min-h-[calc(100vh-112px)] flex flex-col items-center justify-center pt-2.5 sm:pt-4 md:pt-5 lg:pt-6 pb-3 sm:pb-6 lg:pb-8 px-3 sm:px-6 lg:px-8">
       
       {/* City Skyline Artwork anchored and visible on the main starting hero page */}
       <BackgroundArtwork variant="hero" />
@@ -23,7 +23,6 @@ export default function HeroSection() {
           <span className="text-[8px] xs:text-[8.5px] sm:text-[9.5px] md:text-[10px] font-bold sm:font-extrabold uppercase tracking-[0.12em] xs:tracking-[0.14em] sm:tracking-[0.16em] text-white whitespace-nowrap">
             NATIONAL LEVEL AI HACKATHON
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse hidden sm:inline-block shrink-0" />
         </div>
 
         {/* Hero Official Brand Logo & Main Heading (SEO) */}
@@ -45,7 +44,7 @@ export default function HeroSection() {
           </div>
 
           {/* Powered by Sumago Infotech Pvt. Ltd. - Reduced Size Badge */}
-          <div className="mt-2 sm:mt-2.5 md:mt-3 flex justify-center w-full">
+          <div className="mt-2 sm:mt-2.5 md:mt-3 mb-3.5 sm:mb-4 md:mb-5 flex justify-center w-full">
             <a
               href="https://sumagoinfotech.com/"
               target="_blank"
@@ -64,7 +63,7 @@ export default function HeroSection() {
           </div>
           
           {/* Tagline - Prominent vertical spacing separating clearly from Powered By badge */}
-          <p className="mt-6 xs:mt-7 sm:mt-7.5 md:mt-8 lg:mt-9 text-[13px] xs:text-[15px] sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-[#ea580c] tracking-wide sm:tracking-normal uppercase leading-tight break-words">
+          <p className="mt-4 sm:mt-5 md:mt-6 text-[13px] xs:text-[15px] sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-[#ea580c] tracking-wide sm:tracking-normal uppercase leading-tight break-words">
             BUILD. INNOVATE. TRANSFORM.
           </p>
         </div>
@@ -82,21 +81,21 @@ export default function HeroSection() {
               <span className="inline-flex items-center gap-1 sm:gap-1.5 shrink-0">
                 <CalendarIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#2563eb]" /> 23 OCTOBER 2026
               </span>
-              <span className="text-slate-300 select-none shrink-0">•</span>
+              <span className="text-slate-400 font-bold select-none shrink-0">•</span>
               <span className="inline-flex items-center gap-1 sm:gap-1.5 shrink-0">
                 <ClockIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#ea580c]" /> 12 HOURS
               </span>
             </div>
 
             {/* Desktop-only separator between segments */}
-            <span className="text-slate-300 select-none hidden sm:inline-block sm:mx-3.5 shrink-0">•</span>
+            <span className="text-slate-400 font-bold select-none hidden sm:inline-block sm:mx-3.5 shrink-0">•</span>
 
             {/* Mobile Row 2 / Desktop Right Segment */}
             <div className="flex items-center gap-x-2 xs:gap-x-2.5 sm:gap-x-3.5 shrink-0">
               <span className="inline-flex items-center gap-1 sm:gap-1.5 text-[#2563eb] shrink-0">
                 <UsersIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#2563eb]" /> OPEN FOR ALL
               </span>
-              <span className="text-slate-300 select-none shrink-0">•</span>
+              <span className="text-slate-400 font-bold select-none shrink-0">•</span>
               <span className="inline-flex items-center gap-1 sm:gap-1.5 shrink-0">
                 <MapPinIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600" /> AVCOE, SANGAMNER
               </span>
