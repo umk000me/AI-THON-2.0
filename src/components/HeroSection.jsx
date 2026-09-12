@@ -6,73 +6,77 @@ import { CalendarIcon, ClockIcon, UsersIcon, MapPinIcon } from './Icons'
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full bg-[#fef6eb] overflow-hidden min-h-[calc(100vh-112px)] flex flex-col items-center justify-center pt-3 sm:pt-4 lg:pt-6 pb-4 sm:pb-6 lg:pb-8 px-3 sm:px-6 lg:px-8">
+    <section className="relative w-full bg-[#fef6eb] overflow-x-hidden min-h-[calc(100vh-112px)] flex flex-col items-center justify-center pt-3 sm:pt-4 md:pt-5 lg:pt-6 pb-4 sm:pb-6 lg:pb-8 px-3 sm:px-6 lg:px-8">
       
       {/* City Skyline Artwork anchored and visible on the main starting hero page */}
       <BackgroundArtwork variant="hero" />
 
-      <div className="max-w-4xl w-full mx-auto relative z-10 text-center flex flex-col items-center justify-center my-auto">
+      <div className="max-w-5xl w-full mx-auto relative z-10 text-center flex flex-col items-center justify-center my-auto">
         
-        {/* Top Eyebrow Tag - Premium Professional Badge */}
-        <div className="inline-flex items-center gap-1.5 xs:gap-2 sm:gap-2.5 px-3 xs:px-4 sm:px-5 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-[#062b59] via-[#0b3b75] to-[#062b59] text-white shadow-[0_4px_16px_rgba(6,43,89,0.18)] border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 mb-3.5 sm:mb-4 lg:mb-5 max-w-full">
-          <span className="flex items-center justify-center w-3.5 h-3.5 xs:w-4 xs:h-4 rounded-full bg-gradient-to-tr from-[#ea580c] to-[#f97316] text-white shadow-xs shrink-0">
-            <svg className="w-2 xs:w-2.5 h-2 xs:h-2.5" viewBox="0 0 24 24" fill="currentColor">
+        {/* Top Eyebrow Tag - Sleek, Refined Professional Badge (Home page only) */}
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 xs:px-3 sm:px-3.5 md:px-4 py-1 sm:py-1.25 rounded-full bg-gradient-to-r from-[#062b59] via-[#0b3b75] to-[#062b59] text-white shadow-[0_3px_12px_rgba(6,43,89,0.16)] border border-blue-400/30 hover:border-blue-400/60 transition-all duration-300 mb-2.5 sm:mb-3 md:mb-4 max-w-full select-none">
+          <span className="flex items-center justify-center w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full bg-gradient-to-tr from-[#ea580c] to-[#f97316] text-white shadow-xs shrink-0">
+            <svg className="w-1.5 h-1.5 sm:w-2 sm:h-2" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z" />
             </svg>
           </span>
-          <span className="text-[9.5px] xs:text-[10.5px] sm:text-xs font-black uppercase tracking-[0.14em] xs:tracking-[0.18em] sm:tracking-[0.22em] text-white whitespace-nowrap">
+          <span className="text-[8px] xs:text-[8.5px] sm:text-[9.5px] md:text-[10px] font-bold sm:font-extrabold uppercase tracking-[0.12em] xs:tracking-[0.14em] sm:tracking-[0.16em] text-white whitespace-nowrap">
             NATIONAL LEVEL AI HACKATHON
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse hidden xs:inline-block shrink-0" />
+          <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse hidden sm:inline-block shrink-0" />
         </div>
 
         {/* Hero Official Brand Logo & Main Heading (SEO) */}
-        <div className="w-full flex flex-col items-center justify-center mb-2.5 sm:mb-3 max-w-full">
+        <div className="w-full flex flex-col items-center justify-center mb-1 sm:mb-2 max-w-full">
           <h1 className="sr-only">
             AITHON 2.0 - National Level AI Hackathon
           </h1>
 
-          <div className="relative group flex items-center justify-center w-full px-2">
+          {/* Grand AITHON 2.0 Brand Logo - Prominently Scaled Across Viewports */}
+          <div className="relative group flex items-center justify-center w-full px-2 sm:px-4">
             <img
               src={aithonHeroLogo}
               alt="AITHON 2.0 - National Level AI Hackathon"
-              className="w-full max-w-[240px] xs:max-w-[300px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[460px] h-auto object-contain drop-shadow-[0_8px_20px_rgba(6,43,89,0.06)] hover:scale-[1.01] transition-transform duration-500 ease-out select-none"
+              className="w-full max-w-[280px] xs:max-w-[340px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[600px] xl:max-w-[660px] 2xl:max-w-[720px] h-auto object-contain drop-shadow-[0_10px_25px_rgba(6,43,89,0.07)] hover:scale-[1.01] transition-transform duration-500 ease-out select-none"
               style={{ aspectRatio: '1017 / 268' }}
               loading="eager"
               fetchPriority="high"
             />
           </div>
 
-          {/* Powered by Sumago Infotech Pvt. Ltd. */}
-          <a
-            href="https://sumagoinfotech.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/powered inline-flex items-center gap-2.5 mt-2 sm:mt-2.5 px-4 py-1.5 rounded-full bg-white/95 hover:bg-white border border-[#edebe6] hover:border-blue-400 shadow-2xs hover:shadow-xs transition-all duration-200"
-          >
-            <span className="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 group-hover/powered:text-blue-600 transition-colors">
-              Powered by
-            </span>
-            <img
-              src="/sumago_logo.png"
-              alt="Sumago Infotech Pvt. Ltd."
-              className="h-5 sm:h-6 w-auto object-contain group-hover/powered:scale-[1.02] transition-transform duration-200"
-            />
-          </a>
+          {/* Powered by Sumago Infotech Pvt. Ltd. - Reduced Size Badge */}
+          <div className="mt-2 sm:mt-2.5 md:mt-3 flex justify-center w-full">
+            <a
+              href="https://sumagoinfotech.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/powered inline-flex items-center gap-1.5 sm:gap-2 px-2.5 xs:px-3 sm:px-3.5 py-0.5 sm:py-1 rounded-full bg-white/95 hover:bg-white border border-[#edebe6] hover:border-blue-400 shadow-2xs hover:shadow-xs transition-all duration-200"
+            >
+              <span className="text-[8px] xs:text-[8.5px] sm:text-[9.5px] md:text-[10px] font-bold uppercase tracking-wider text-slate-500 group-hover/powered:text-blue-600 transition-colors">
+                Powered by
+              </span>
+              <img
+                src="/sumago_logo.png"
+                alt="Sumago Infotech Pvt. Ltd."
+                className="h-3.5 xs:h-4 sm:h-[18px] md:h-5 w-auto object-contain group-hover/powered:scale-[1.02] transition-transform duration-200"
+              />
+            </a>
+          </div>
           
-          <p className="mt-2 sm:mt-2.5 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-black text-[#ea580c] tracking-tight uppercase leading-tight break-words">
+          {/* Tagline - Prominent vertical spacing separating clearly from Powered By badge */}
+          <p className="mt-6 xs:mt-7 sm:mt-7.5 md:mt-8 lg:mt-9 text-[13px] xs:text-[15px] sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-[#ea580c] tracking-wide sm:tracking-normal uppercase leading-tight break-words">
             BUILD. INNOVATE. TRANSFORM.
           </p>
         </div>
 
-        {/* Subtitle Quote */}
-        <p className="text-slate-600 text-[11px] xs:text-xs sm:text-sm md:text-[14px] font-semibold tracking-wide leading-relaxed max-w-xl mx-auto px-2 sm:px-4 text-center break-words mb-2.5 sm:mb-3">
+        {/* Subtitle Quote - Balanced text on mobile and desktop */}
+        <p className="text-slate-600 text-[10.5px] xs:text-[11.5px] sm:text-[13px] md:text-sm lg:text-[15px] font-semibold tracking-wide leading-relaxed max-w-md sm:max-w-2xl mx-auto px-3 sm:px-4 text-center break-words text-balance mt-2 sm:mt-2.5 mb-3 sm:mb-4 md:mb-5">
           "12 Hours of Artificial Intelligence, Innovation & Real-World Problem Solving."
         </p>
 
         {/* Responsive Event Info Pill - 2 Balanced Rows on Mobile, Seamless Single Line on Desktop */}
-        <div className="w-full max-w-4xl mx-auto flex justify-center px-2 sm:px-4 mt-2.5 sm:mt-3 mb-4 sm:mb-5">
-          <div className="inline-flex flex-col sm:flex-row items-center justify-center text-[10.5px] xs:text-[11.5px] sm:text-[12.5px] md:text-[13px] font-bold text-[#062b59] py-2 sm:py-2.5 px-3.5 xs:px-4 sm:px-6 bg-white/95 backdrop-blur-sm border border-[#edebe6] shadow-xs rounded-2xl sm:rounded-full max-w-full gap-y-1.5 sm:gap-y-0 select-none no-scrollbar overflow-hidden">
+        <div className="w-full max-w-4xl mx-auto flex justify-center px-2 sm:px-4 mb-3 sm:mb-4 md:mb-5">
+          <div className="inline-flex flex-col sm:flex-row items-center justify-center text-[10px] xs:text-[11px] sm:text-[12px] md:text-[13px] font-bold text-[#062b59] py-1.5 sm:py-2 md:py-2.5 px-3 xs:px-4 sm:px-6 bg-white/95 backdrop-blur-sm border border-[#edebe6] shadow-xs rounded-2xl sm:rounded-full max-w-full gap-y-1.5 sm:gap-y-0 select-none no-scrollbar overflow-hidden">
             {/* Mobile Row 1 / Desktop Left Segment */}
             <div className="flex items-center gap-x-2 xs:gap-x-2.5 sm:gap-x-3.5 shrink-0">
               <span className="inline-flex items-center gap-1 sm:gap-1.5 shrink-0">
@@ -101,21 +105,21 @@ export default function HeroSection() {
         </div>
 
         {/* Integrated Hero Live Countdown Timer */}
-        <div className="w-full max-w-md mx-auto mb-4 sm:mb-5 px-1 sm:px-0">
+        <div className="w-full max-w-md mx-auto mb-3.5 sm:mb-4.5 md:mb-5 px-1 sm:px-0">
           <CountdownTimer variant="hero" />
         </div>
 
         {/* Action Buttons - Distinctly positioned and mobile responsive */}
-        <div className="flex flex-row items-center justify-center gap-2.5 sm:gap-4 w-full sm:w-auto relative z-20 mb-3 sm:mb-4 px-2 sm:px-0">
+        <div className="flex flex-row items-center justify-center gap-2.5 sm:gap-3.5 md:gap-4 w-full sm:w-auto relative z-20 mb-2 sm:mb-3 px-2 sm:px-0">
           <Link
             to="/register"
-            className="flex-1 sm:flex-none px-5 xs:px-7 sm:px-10 py-2.5 sm:py-3.5 bg-[#062b59] hover:bg-[#2563eb] text-white font-bold text-[11px] xs:text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-sm text-center rounded-xl hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+            className="flex-1 sm:flex-none px-4 xs:px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 bg-[#062b59] hover:bg-[#2563eb] text-white font-bold text-[10.5px] xs:text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 shadow-sm text-center rounded-xl hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
           >
             REGISTER NOW
           </Link>
           <a
             href="#about"
-            className="flex-1 sm:flex-none px-5 xs:px-7 sm:px-10 py-2.5 sm:py-3.5 bg-white hover:bg-[#faf9f6] text-[#062b59] border-2 border-[#062b59] font-bold text-[11px] xs:text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 text-center shadow-xs rounded-xl hover:border-[#2563eb] hover:text-[#2563eb] hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+            className="flex-1 sm:flex-none px-4 xs:px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 bg-white hover:bg-[#faf9f6] text-[#062b59] border-2 border-[#062b59] font-bold text-[10.5px] xs:text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 text-center shadow-xs rounded-xl hover:border-[#2563eb] hover:text-[#2563eb] hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
           >
             EXPLORE AITHON
           </a>
